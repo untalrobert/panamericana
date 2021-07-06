@@ -422,7 +422,10 @@ textarea {
     grid-template-areas:
       ".icon-envio .icon-tiendas";
   }
-  
+  .icon-envio {
+    text-align: center;
+  }
+
   .icon {
     display: inline-block;
     width: 1em;
