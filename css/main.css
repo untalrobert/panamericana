@@ -114,6 +114,7 @@ textarea {
 
   
   /* colors */
+  --color-institucional: #ff6f22;
   --color-text: rgb(84, 84, 84);
   --precio: #ff6f22;
   --text-secundario: #c7c7c7;
@@ -404,7 +405,7 @@ textarea {
 }
 
 .close:hover {
-  background: #FAAC58;
+  background: var(--color-institucional);
   color:#222;
 }
 
@@ -419,7 +420,7 @@ textarea {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "icon-envio .icon-tiendas";
+      ".icon-envio .icon-tiendas";
   }
   
   .icon {
