@@ -89,42 +89,6 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  /* new grid */
-  /* Section */
-  .section {
-    clear: both;
-    margin: 0px;
-    padding: 0px;
-  }
-  /* Column */
-  .col {
-    background: #eee;
-    display: block;
-    float:left;
-    margin: 1% 0 1% 1.6%;
-  }
-  .col:first-child { margin-left: 0 !important; }
-  
-  /* Row */
-  .row:before,
-  .row:after { content:""; display:table; }
-  .row:after { clear:both;}
-  .row { zoom:1; /* For IE 6/7 */ }
-  
-  /* Grid */
-  .grid_1_of_3{ width: 32.267% }
-  .grid_2_of_3{ width: 66.133% }
-  .grid_3_of_3{ width: 100% }
-  
-  /* Full Width below 768 pixels */
-  @media only screen and (max-width: 768px) {
-    .col {  margin: 1% 0 1% 0%; }
-    [class*='grid_'] { width: 100%; }
-  }
-  /* new grid */
-  
-  
-  
   
   
      .container {
@@ -348,7 +312,7 @@
     transition: box-shadow 0.15s, margin 0.15s;
   }
   .csslider > .arrows label:hover {
-    box-shadow: inset 3px -3px 0 2px #71ad37;
+    box-shadow: inset 3px -3px 0 2px var(--color-institucional);
     margin: 0 0px;
   }
   .csslider > .arrows label:before {
@@ -575,6 +539,7 @@
       font-size: 18px;
       text-align: center;
       margin-bottom: 0px;
+      margin-top: 35px;
     }
     .content-title p {
       text-align: center;
@@ -715,6 +680,7 @@
     }
     .section-select {
       text-align: center;
+      margin-top: 15px;
     }
   
     .content-select {
@@ -791,7 +757,7 @@
       color: var(--color-institucional);      
     }
     .content-condiciones {
-      margin-top: 20px;
+      margin-top: 40px;
       text-align: center;
     }
     .terminos {
