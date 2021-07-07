@@ -551,7 +551,7 @@
       text-align: center;
       margin: 0px;
       font-size: 40px;
-      font-weight: bold;
+      font-weight: 500;
       color: var(--precio); 
       text-decoration: none;   
     }
