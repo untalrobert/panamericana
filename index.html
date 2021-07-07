@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/grid.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,42 +29,47 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="slider">
-      <section>
-        <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="csslider infinity" id="slider1">
-                  <input type="radio" name="slides" checked="checked" id="slides_1"/>
-                  <input type="radio" name="slides" id="slides_2"/>
-                  <input type="radio" name="slides" id="slides_3"/>
-                  <input type="radio" name="slides" id="slides_4"/>
-                  <ul>
-                    <li><img src="img/pc.png"/></li>
-                    <li><img src="img/pc.png"/></li>
-                    <li><img src="img/pc.png"/></li>
-                    <li><img src="img/pc.png"/></li>
-                  </ul>
-                  <div class="arrows">
-                    <label for="slides_1"></label>
-                    <label for="slides_2"></label>
-                    <label for="slides_3"></label>
-                    <label for="slides_4"></label>
-                  </div>
-                  <div class="navigation">
-                    <div>
-                      <label for="slides_1"><img width="50" height="50" src="img/pc.jpg"/></label>
-                      <label for="slides_2"><img width="50" height="50" src="img/pc.jpg"/></label>
-                      <label for="slides_3"><img width="50" height="50" src="img/pc.jpg"/></label>
-                      <label for="slides_4"><img width="50" height="50" src="img/pc.jpg"/></label>
+
+  <div class="section">
+
+    <div class="col grid_1_of_3">
+      <div class="slider">
+        <section>
+          <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="csslider infinity" id="slider1">
+                    <input type="radio" name="slides" checked="checked" id="slides_1"/>
+                    <input type="radio" name="slides" id="slides_2"/>
+                    <input type="radio" name="slides" id="slides_3"/>
+                    <input type="radio" name="slides" id="slides_4"/>
+                    <ul>
+                      <li><img src="img/pc.png"/></li>
+                      <li><img src="img/pc.png"/></li>
+                      <li><img src="img/pc.png"/></li>
+                      <li><img src="img/pc.png"/></li>
+                    </ul>
+                    <div class="arrows">
+                      <label for="slides_1"></label>
+                      <label for="slides_2"></label>
+                      <label for="slides_3"></label>
+                      <label for="slides_4"></label>
+                    </div>
+                    <div class="navigation">
+                      <div>
+                        <label for="slides_1"><img width="50" height="50" src="img/pc.jpg"/></label>
+                        <label for="slides_2"><img width="50" height="50" src="img/pc.jpg"/></label>
+                        <label for="slides_3"><img width="50" height="50" src="img/pc.jpg"/></label>
+                        <label for="slides_4"><img width="50" height="50" src="img/pc.jpg"/></label>
+                      </div>
                     </div>
                   </div>
-                </div>
+            </div>
           </div>
-        </div>
-      </section>         
+        </section>         
+      </div>
     </div>
-    <form action="">
+    
+    <div class="col grid_1_of_3">
       <div class="text content-cracteristicas">
         <div class="content-title">
           <h1>PORTÁTIL HP 15-EF1019LA, AMD RYZEN 5, RAM 8 GB, 512 GB SSD, 15,6", PLATEADO </h1>
@@ -143,9 +149,32 @@
             </div>
           </section>
         </div>     
-      </div>
-    </form>
-</div>
+      </div>  
+    </div>
+    
+    <div class="col grid_1_of_3 bg-grid">
+      <div class="beneficios">
+        <div class="logo">
+          <img src="img/logo.png" alt="">  
+        </div>
+  
+        <div class="textos">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo voluptates Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </p>
+        </div>
+  
+        <div class="checkBox">
+          <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"></label>
+
+        </div>
+  
+
+      </div>       
+    </div>   
+  </div>
+    
+
+
+
 
 
 

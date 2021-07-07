@@ -1,0 +1,45 @@
+/* Section */
+.section {
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Column */
+  .col {
+    /* background: #eee; */
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+  }
+  .col:first-child { margin-left: 0 !important; }
+  
+  /* Row */
+  .row:before,
+  .row:after { content:""; display:table; }
+  .row:after { clear:both;}
+  .row { zoom:1; /* For IE 6/7 */ }
+  
+  /* Grid */
+  .grid_1_of_3{ width: 32% }
+  .grid_2_of_3{ width: 66.133% }
+  .grid_3_of_3{ width: 100% }
+
+  .beneficios {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo textos checkBox";
+      background-color: #08b3f3;
+      align-items: center;     
+  }
+ 
+  
+  
+  /* Full Width below 768 pixels */
+  @media only screen and (max-width: 768px) {
+    .col {  margin: 1% 0 1% 0%; }
+    [class*='grid_'] { width: 100%; }
+  }
