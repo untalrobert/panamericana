@@ -147,7 +147,7 @@
     Setup for code demo only
   */
   :root {
-    --current-image-height: 300px;
+    --current-image-height: 100px;
     --thumbnails-track-height: 90px;
     --thumbnail-width: 100px;
   
@@ -206,13 +206,14 @@
   }
   .csslider > ul {
     position: relative;
-    width: 640px;
+    width: 540px;
     height: auto;
     z-index: 1;
     font-size: 0;
     line-height: 0;
     background-color: #ffffff;
     margin: 0 auto;
+    text-align: center;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -545,36 +546,7 @@
   a.nice-link:hover:after {
     width: 100%;
   }
-  /*___________________________________ SIGN ___________________________________ */
-  #dex-sign {
-    width: 255px;
-    height: 84px;
-    position: absolute;
-    left: 33%;
-    top: 45%;
-    opacity: .7;
-    background: url(http://www.drygiel.com/projects/sign/frames-255-white.png) 0 0 no-repeat;
-  }
-  #dex-sign:hover {
-    opacity: 1;
-    -webkit-filter: invert(30%) brightness(80%) sepia(100%) contrast(110%) saturate(953%) hue-rotate(45deg);
-  }
-  @-webkit-keyframes sign-anim {
-    to {
-      background-position: 0 -7140px;
-    }
-  }
-  @-moz-keyframes sign-anim {
-    to {
-      background-position: 0 -7140px;
-    }
-  }
-  @keyframes sign-anim {
-    to {
-      background-position: 0 -7140px;
-    }
-  }
-  
+ 
   
   
   
@@ -602,6 +574,7 @@
     .content-title h1 {
       font-size: 18px;
       text-align: center;
+      margin-bottom: 0px;
     }
     .content-title p {
       text-align: center;
@@ -621,9 +594,10 @@
       text-align: center;
       margin: 0px;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 500;
       color: var(--text-secundario); 
-      text-decoration: line-through;   
+      text-decoration: line-through;
+      margin-top: -10px;  
     }
   
     .carteristicas {
@@ -733,7 +707,13 @@
       grid-template-areas:
         ".icon-envio .icon-tiendas";
     }
+    .content-icons p {
+      font-weight: 300;;
+    }
     .icon-envio {
+      text-align: center;
+    }
+    .section-select {
       text-align: center;
     }
   
@@ -742,17 +722,55 @@
       display: inline-flex;
       text-align: center;
     }
-    .content-select label {
-      width: 150px;
+
+    .content-select .title-label {
+     margin: 5px 9px 0px;
     }
-    .content-select .select {
-      text-align: center;
-      margin-left: 0px;
-      max-width: 100px;
-    }
+    
   
     /* final contenedor slider */
   
+
+    /* SECTION BTN-COMPRAR */
+    .botones {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ".btn-comprar .btn-agregar";
+        text-align: center;
+    }
+    
+    .button {
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 50px;
+    }
+    .btn-comprar {
+      text-align: end;
+    }
+    .btn-c {
+      background-color: var(--color-institucional);
+      color: white;
+      padding: 12px 32px;
+    }
+    .btn-agregar {
+      text-align: left;
+      margin-left: 25px;
+    }
+    .btn-a {
+      border: 2px solid var(--color-institucional);
+      padding: 6px 32px;
+      margin-top: 2px;
+      background-color: transparent;
+    }
+    /* SECTION BTN-COMPRAR */
   
   
   
