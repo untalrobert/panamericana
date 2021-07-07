@@ -324,9 +324,9 @@
   }
   .csslider > .arrows {
     position: absolute;
-    left: -31px;
+    left: 68px;
     /* top: 50%; */
-    width: 100%;
+    width: 62%;
     /* height: 26px; */
     padding: 0 31px;
     z-index: 0;
@@ -722,6 +722,9 @@
       display: inline-flex;
       text-align: center;
     }
+    .fa-2x {
+      font-size: 1.1em!important;
+  }
 
     .content-select .title-label {
      margin: 5px 9px 0px;
@@ -759,6 +762,7 @@
       background-color: var(--color-institucional);
       color: white;
       padding: 12px 32px;
+      font-weight: bold;
     }
     .btn-agregar {
       text-align: left;
@@ -771,6 +775,34 @@
       background-color: transparent;
     }
     /* SECTION BTN-COMPRAR */
+
+    /* SECTION TERMINOS Y CONDICIONES */
+    .terminos-condiciones {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      font-size: 14px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ".terminos .politicas";
+    }
+    .terminos-condiciones .fa-file-alt:before {
+      color: var(--color-institucional);      
+    }
+    .content-condiciones {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .terminos {
+      text-align: right;
+    }
+    .politicas {
+      text-align: left;
+      margin-left: 10%;
+    }
+    
+    /* SECTION TERMINOS Y CONDICIONES */
   
   
   
